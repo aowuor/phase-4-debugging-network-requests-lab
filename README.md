@@ -63,10 +63,12 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  check browser console on adding new toy. For error 500, open rails server log and look at the last request log to find error. Incase of uninitilized constant error in the controller, confirm and add any missing routes, then check for any spelling mistakes in the constants used.
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  Check browser console for errors on update of likes. For unexpected end of JSON input, check the PATCH fetch request on controller and ensure the updated data is rendered to json.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
